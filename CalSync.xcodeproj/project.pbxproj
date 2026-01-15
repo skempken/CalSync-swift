@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A6EB0373682EC9AA2733E9 /* BackgroundSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB62A1DD4B0844DFF400330F /* BackgroundSyncService.swift */; };
+		1327AC9C670396D494BA6DA1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50948949CB85EE9A5221BF0A /* AppState.swift */; };
+		553AF0D0562D00F5DA578805 /* EventKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99762BC1CD8B906E1C7766F2 /* EventKitService.swift */; };
+		611244118784F194B0A469ED /* ChangeDiffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F7291F391C7484CC92658 /* ChangeDiffer.swift */; };
+		6446F3F76656421FE9811552 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28DF3A33797F89A20EF2931 /* GeneralSettingsView.swift */; };
+		6C4FDFF81F59739E0FED3F53 /* CalSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B23500E88042793E1437C /* CalSyncApp.swift */; };
+		787F31B43735F01051E5D963 /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750ECD9B9E58267257D89A6F /* SyncEngine.swift */; };
+		7F1801D228BFC2CC7043914C /* SyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030CEB782B941CA8E3E88AFF /* SyncAction.swift */; };
+		8468111E5A61D271995F5BA1 /* CalendarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F55B6EB792E9E483D131A3 /* CalendarInfo.swift */; };
+		865DC03DD4AB2DBADA867547 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140ED48CD82EF192829AD882 /* SettingsWindow.swift */; };
+		93204E8901CC9B6BD872DC3E /* EventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A25C369019AF9241C594A9 /* EventTracker.swift */; };
+		B5ED0A0FD755C8651CA21961 /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B7B90CF604D4CF921029E /* CalendarEvent.swift */; };
+		B5EE40F3D928E13BD2B3D948 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD315395A35EF3BAB4B7F4A /* MenuBarView.swift */; };
+		BA1B4F9DDA30BE50386DC8C6 /* CalendarsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D045CCD51114477FFDB4E67 /* CalendarsSettingsView.swift */; };
+		DA94AA1B2E45472CD600FB56 /* PlaceholderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5C819A9F6D3323E28AE3B /* PlaceholderInfo.swift */; };
+		E48982787073277FE7111D7F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAEE05A7267F1F94487C8ED /* Constants.swift */; };
+		E607291DB080593DA5BDC628 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB82590D513499A7DC943D /* AboutView.swift */; };
+		F994F3527CAFC99B191B4ACA /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ABE1049B97972529CA1A04 /* SettingsStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		030CEB782B941CA8E3E88AFF /* SyncAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncAction.swift; sourceTree = "<group>"; };
+		136210F7FB374DEC2949176C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		140ED48CD82EF192829AD882 /* SettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindow.swift; sourceTree = "<group>"; };
+		4BD5C819A9F6D3323E28AE3B /* PlaceholderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderInfo.swift; sourceTree = "<group>"; };
+		4D045CCD51114477FFDB4E67 /* CalendarsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarsSettingsView.swift; sourceTree = "<group>"; };
+		50948949CB85EE9A5221BF0A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		61249A7ECC9420CD3983DE86 /* CalSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		694B23500E88042793E1437C /* CalSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalSyncApp.swift; sourceTree = "<group>"; };
+		69FB82590D513499A7DC943D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		750ECD9B9E58267257D89A6F /* SyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
+		79ABE1049B97972529CA1A04 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		99762BC1CD8B906E1C7766F2 /* EventKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKitService.swift; sourceTree = "<group>"; };
+		B70F7291F391C7484CC92658 /* ChangeDiffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDiffer.swift; sourceTree = "<group>"; };
+		C5A25C369019AF9241C594A9 /* EventTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTracker.swift; sourceTree = "<group>"; };
+		CB62A1DD4B0844DFF400330F /* BackgroundSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSyncService.swift; sourceTree = "<group>"; };
+		CCAEE05A7267F1F94487C8ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D28DF3A33797F89A20EF2931 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		EE6B7B90CF604D4CF921029E /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		F4F55B6EB792E9E483D131A3 /* CalendarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInfo.swift; sourceTree = "<group>"; };
+		FAD315395A35EF3BAB4B7F4A /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		366617668940B7C5A590A2B6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				69FB82590D513499A7DC943D /* AboutView.swift */,
+				4D045CCD51114477FFDB4E67 /* CalendarsSettingsView.swift */,
+				D28DF3A33797F89A20EF2931 /* GeneralSettingsView.swift */,
+				140ED48CD82EF192829AD882 /* SettingsWindow.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		40C954B16C603C0CB25890E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE6B7B90CF604D4CF921029E /* CalendarEvent.swift */,
+				F4F55B6EB792E9E483D131A3 /* CalendarInfo.swift */,
+				4BD5C819A9F6D3323E28AE3B /* PlaceholderInfo.swift */,
+				030CEB782B941CA8E3E88AFF /* SyncAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47E82B137F69074E629AF10B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CCAEE05A7267F1F94487C8ED /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5361894D0E251C7967FADA3E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				50948949CB85EE9A5221BF0A /* AppState.swift */,
+				79ABE1049B97972529CA1A04 /* SettingsStore.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5A47DB81B89CACC281C9B3C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB62A1DD4B0844DFF400330F /* BackgroundSyncService.swift */,
+				B70F7291F391C7484CC92658 /* ChangeDiffer.swift */,
+				99762BC1CD8B906E1C7766F2 /* EventKitService.swift */,
+				C5A25C369019AF9241C594A9 /* EventTracker.swift */,
+				750ECD9B9E58267257D89A6F /* SyncEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A4E23F69A2B8CD855EC4264 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAD315395A35EF3BAB4B7F4A /* MenuBarView.swift */,
+				366617668940B7C5A590A2B6 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EC5BD60A85679BA859F506B /* CalSync */ = {
+			isa = PBXGroup;
+			children = (
+				694B23500E88042793E1437C /* CalSyncApp.swift */,
+				136210F7FB374DEC2949176C /* Info.plist */,
+				40C954B16C603C0CB25890E3 /* Models */,
+				A3AFDCEF42DDE4DE9347EEFA /* Resources */,
+				5A47DB81B89CACC281C9B3C2 /* Services */,
+				47E82B137F69074E629AF10B /* Utilities */,
+				5361894D0E251C7967FADA3E /* ViewModels */,
+				5A4E23F69A2B8CD855EC4264 /* Views */,
+			);
+			path = CalSync;
+			sourceTree = "<group>";
+		};
+		722C2901785775589E685800 = {
+			isa = PBXGroup;
+			children = (
+				5EC5BD60A85679BA859F506B /* CalSync */,
+				E32A1364906E90D5E3094916 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3AFDCEF42DDE4DE9347EEFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E32A1364906E90D5E3094916 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61249A7ECC9420CD3983DE86 /* CalSync.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96C492362B2DEC03822ACB5E /* CalSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B5F4BFE90A452B83B1AA68 /* Build configuration list for PBXNativeTarget "CalSync" */;
+			buildPhases = (
+				ECD1B4EF826F40607B534B37 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalSync;
+			packageProductDependencies = (
+			);
+			productName = CalSync;
+			productReference = 61249A7ECC9420CD3983DE86 /* CalSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9161247CE66E9B6DB9D374CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					96C492362B2DEC03822ACB5E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9F23DDE7DE462E27DAC507CA /* Build configuration list for PBXProject "CalSync" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 722C2901785775589E685800;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96C492362B2DEC03822ACB5E /* CalSync */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD1B4EF826F40607B534B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E607291DB080593DA5BDC628 /* AboutView.swift in Sources */,
+				1327AC9C670396D494BA6DA1 /* AppState.swift in Sources */,
+				03A6EB0373682EC9AA2733E9 /* BackgroundSyncService.swift in Sources */,
+				6C4FDFF81F59739E0FED3F53 /* CalSyncApp.swift in Sources */,
+				B5ED0A0FD755C8651CA21961 /* CalendarEvent.swift in Sources */,
+				8468111E5A61D271995F5BA1 /* CalendarInfo.swift in Sources */,
+				BA1B4F9DDA30BE50386DC8C6 /* CalendarsSettingsView.swift in Sources */,
+				611244118784F194B0A469ED /* ChangeDiffer.swift in Sources */,
+				E48982787073277FE7111D7F /* Constants.swift in Sources */,
+				553AF0D0562D00F5DA578805 /* EventKitService.swift in Sources */,
+				93204E8901CC9B6BD872DC3E /* EventTracker.swift in Sources */,
+				6446F3F76656421FE9811552 /* GeneralSettingsView.swift in Sources */,
+				B5EE40F3D928E13BD2B3D948 /* MenuBarView.swift in Sources */,
+				DA94AA1B2E45472CD600FB56 /* PlaceholderInfo.swift in Sources */,
+				F994F3527CAFC99B191B4ACA /* SettingsStore.swift in Sources */,
+				865DC03DD4AB2DBADA867547 /* SettingsWindow.swift in Sources */,
+				7F1801D228BFC2CC7043914C /* SyncAction.swift in Sources */,
+				787F31B43735F01051E5D963 /* SyncEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2EFA9905983C6B1E43BED5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2F1AEE7FA5607290F8ECBBAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalSync/CalSync.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = CalSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appschmiede.CalSync;
+				PRODUCT_NAME = CalSync;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D60C6CA3D9D353F2C573EC6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalSync/CalSync.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = CalSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appschmiede.CalSync;
+				PRODUCT_NAME = CalSync;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EDDF5EAA689D55D80913F3AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F23DDE7DE462E27DAC507CA /* Build configuration list for PBXProject "CalSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDF5EAA689D55D80913F3AB /* Debug */,
+				2EFA9905983C6B1E43BED5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5B5F4BFE90A452B83B1AA68 /* Build configuration list for PBXNativeTarget "CalSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1AEE7FA5607290F8ECBBAE /* Debug */,
+				D60C6CA3D9D353F2C573EC6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9161247CE66E9B6DB9D374CB /* Project object */;
+}
