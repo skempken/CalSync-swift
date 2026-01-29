@@ -74,6 +74,14 @@ final class SettingsStore: ObservableObject {
     func isCalendarSelected(_ id: String) -> Bool {
         selectedCalendarIDs.contains(id)
     }
+
+    /// Remove calendar IDs that no longer exist in EventKit.
+    func cleanupOrphanedCalendars(availableIDs: Set<String>) {
+        let orphaned = selectedCalendarIDs.filter { !availableIDs.contains($0) }
+        if !orphaned.isEmpty {
+            selectedCalendarIDs.removeAll { !availableIDs.contains($0) }
+        }
+    }
 }
 
 /// Available sync interval options.

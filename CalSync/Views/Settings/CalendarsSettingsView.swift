@@ -89,6 +89,11 @@ struct CalendarsSettingsView: View {
                 _ = await appState.requestCalendarAccess()
             }
         }
+        .onAppear {
+            // Remove calendar IDs that no longer exist in EventKit
+            let availableIDs = Set(appState.writableCalendars.map(\.id))
+            settingsStore.cleanupOrphanedCalendars(availableIDs: availableIDs)
+        }
     }
 }
 

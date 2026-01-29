@@ -82,6 +82,32 @@ final class SyncEngine: ObservableObject {
             }
         }
 
+        // Clean up placeholders from calendars no longer in the sync list
+        let calendarIDSet = Set(calendarIDs)
+        let orphanedResult = cleanupOrphanedPlaceholders(
+            eventsByCalendar: eventsByCalendar,
+            activeCalendarIDs: calendarIDSet,
+            dryRun: dryRun
+        )
+        if orphanedResult.totalActions > 0 {
+            summary.results.append(orphanedResult)
+
+            // Refresh events after cleanup
+            if !dryRun {
+                for calID in calendarIDs {
+                    do {
+                        eventsByCalendar[calID] = try eventKitService.getEvents(
+                            calendarID: calID,
+                            from: effectiveStartDate,
+                            to: effectiveEndDate
+                        )
+                    } catch {
+                        logger.error("Failed to refresh events after orphan cleanup: \(error.localizedDescription)")
+                    }
+                }
+            }
+        }
+
         // Sync each pair (source -> target) using permutations
         let pairs = generatePermutations(calendarIDs)
 
@@ -188,6 +214,40 @@ final class SyncEngine: ObservableObject {
                 let errorMsg = "Error in \(action.actionType.rawValue): \(error.localizedDescription)"
                 logger.error("\(errorMsg)")
                 result.errors.append(errorMsg)
+            }
+        }
+
+        return result
+    }
+
+    /// Remove placeholders whose source calendar is no longer in the active sync list.
+    private func cleanupOrphanedPlaceholders(
+        eventsByCalendar: [String: [CalendarEvent]],
+        activeCalendarIDs: Set<String>,
+        dryRun: Bool
+    ) -> SyncResult {
+        var result = SyncResult()
+        result.sourceID = "orphan-cleanup"
+
+        for (calID, events) in eventsByCalendar {
+            result.targetID = calID
+            for event in events {
+                guard tracker.isPlaceholder(event),
+                      let info = tracker.extractTrackingInfo(event),
+                      !activeCalendarIDs.contains(info.sourceCalendarID) else {
+                    continue
+                }
+
+                logger.info("Removing orphaned placeholder in \(calID.prefix(8))... (source calendar \(info.sourceCalendarID.prefix(8))... no longer active)")
+
+                if !dryRun {
+                    do {
+                        _ = try eventKitService.deleteEvent(eventID: event.id)
+                    } catch {
+                        result.errors.append("Failed to delete orphaned placeholder: \(error.localizedDescription)")
+                    }
+                }
+                result.deleted += 1
             }
         }
 
